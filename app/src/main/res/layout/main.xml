@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="1dp"
+		android:background="#FF060959"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/top_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="@string/duration"
+			android:textSize="12sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"/>
+
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/b01"
+				android:layout_width="160dp"
+				android:layout_height="90dp"
+				android:background="@drawable/start_button_bg"
+				android:drawableTop="@drawable/ic_play_start_button"
+				android:padding="8dp"
+				android:text="@string/start_cheat"
+				android:textColor="#FFFFFF"
+				android:textSize="15sp"
+				android:textStyle="bold"/>
+
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="vertical"/>
+
+			<Button
+				android:id="@+id/b02"
+				android:layout_width="160dp"
+				android:layout_height="90dp"
+				android:background="@drawable/stop_button_bg"
+				android:drawableTop="@drawable/ic_pause_stop_button"
+				android:padding="8dp"
+				android:text="@string/stop_cheat"
+				android:textColor="#FFFFFF"
+				android:textSize="15sp"
+				android:textStyle="bold"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/st"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="@string/root_nonroot"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"/>
+
+		<RadioGroup
+			android:id="@+id/radioMod"
+			android:layout_width="323dp"
+			android:layout_height="45dp"
+			android:background="@drawable/click_safety_status_bg"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<RadioButton
+				android:id="@+id/radiobutton3"
+				android:layout_width="114dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:padding="4dp"
+				android:text="Root"
+				android:textColor="#ffffff"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<RadioButton
+				android:id="@+id/radiobutton4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:padding="4dp"
+				android:text="Non Root"
+				android:textColor="#ffffff"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+		</RadioGroup>
+
+		<TextView
+			android:id="@+id/opa"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="@string/oparate_by"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"/>
+
+		<RadioGroup
+			android:id="@+id/radioBit"
+			android:layout_width="323dp"
+			android:layout_height="42dp"
+			android:background="@drawable/sniper_border"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<RadioButton
+				android:id="@+id/radiobutton5"
+				android:layout_width="1dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:padding="4dp"
+				android:text="32 Bit"
+				android:textColor="#ffffff"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+		</RadioGroup>
+
+		<TextView
+			android:id="@+id/ver"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="@string/pubg_version"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"/>
+
+		<Spinner
+			android:id="@+id/spinner"
+			android:layout_width="153dp"
+			android:layout_height="43dp"
+			android:layout_marginTop="1dp"
+			android:background="@drawable/sniper_border"
+			android:spinnerMode="dropdown"
+			style="@style/AppTheme"/>
+
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="1dp"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/b1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Telegram"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"/>
+
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal"/>
+
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal"/>
+
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:padding="8dp"
+				android:background="#FFFFFF"
+				android:orientation="horizontal"/>
+
+			<TextView
+				android:id="@+id/telegram"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="@string/channel_link"
+				android:textSize="20sp"
+				android:textColor="#D50000"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Reset Guest Kr Root️"
+				android:textColor="#FF42461F"
+				android:id="@+id/kr"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Reset Guest Gl Root"
+				android:textColor="#FF42461F"
+				android:id="@+id/gl"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Clear Log"
+				android:textColor="#FF42461F"
+				android:id="@+id/Clear"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:translationY="-10dp"
+				android:layout_gravity="bottom">
+
+				<TextView
+					android:id="@+id/version_info"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:text=""
+					android:textColor="#ffffff"
+					android:textStyle="bold"
+					android:textSize="10dp"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

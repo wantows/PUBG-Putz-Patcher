@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Putri Source</string>
+    <string name="channel_link">Your Channel</string>
+    <string name="start_cheat">Start Cheat</string>
+    <string name="stop_cheat">Stop Cheat</string>
+    <string name="is_name"> Name</string>
+    <string name="root_nonroot">Execute Mode?</string>
+    <string name="oparate_by">Opareting System?</string>
+    <string name="pubg_version">PUBG Mobile Version?</string>
+    <string name="is_distance"> Distance</string>
+    <string name="about_us">About Us</string>
+    <string name="generic_adjust">    ESP Generic Adjustment</string>
+    <string name="is_line"> Line</string>
+    <string name="is_box"> Box</string>
+    <string name="is_health"> Health</string>
+    <string name="is_head"> Show Head</string>
+    <string name="is_skeleton"> Skeleton</string>
+    <string name="is_weapon"> Weapon</string>
+    <string name="contact_ninja">Contact Us</string>
+    <string name="is_back"> Alert 360</string>
+    <string name="is_throwables"> Throwables</string>
+    <string name="adjustment_items">    ESP Items Adjustment</string>
+    <string name="duration">Free Source</string>
+    <string name="aimbot_baba">Aimbot</string>
+    <string name="wide_view">WideView</string>
+    <string name="floating_menu">Putri Free Source</string>
+    <string name="world_view">    World View Adjustment</string>
+    <string name="name_size">  Adjust Name Size</string>
+    <string name="name_position">  Adjust Name Position</string>
+    <string name="item_size">   Adjust Item Size</string>
+    <string name="item_position">   Adjust Item Position</string>
+</resources>

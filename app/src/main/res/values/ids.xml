@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settings" type="id"></item>
+    <item name="SettingsBtn" type="id"></item>
+    <item name="vehicleBtn" type="id" />
+    <item name="itemBtn" type="id" />
+    <item name="playerBtn" type="id" />
+    <item name="espView" type="id" />
+</resources>

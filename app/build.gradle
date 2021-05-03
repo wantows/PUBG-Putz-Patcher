@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    compileOptions {
+        // This library uses Java 8 features, this is required
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.tencent.qq"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        /*
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }*/
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        /*
+        cmake {
+        //if use cmake not work to compile cpp, u must create android.mk in folder cpp
+            path "src/main/jni/Android.mk"
+            version "3.10.2"
+        }*/
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    ndkVersion = '22.0.7026061'
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies { 
+    //Uncomment this line if you use AIDE
+    //implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.yukuku:ambilwarna:2.0.1'
+
+    //Comment out or remove this line if you use AIDE
+    implementation 'com.github.QuadFlask:colorpicker:0.0.13'
+}
